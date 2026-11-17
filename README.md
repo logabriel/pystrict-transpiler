@@ -1,10 +1,10 @@
-*PyStrict Transpiler*
+# *PyStrict Transpiler*
 
 PyStrict Transpiler es un proyecto en desarrollo construido en C++17 que traduce un subconjunto estáticamente tipado de Python (PyStrict) a código compilable.
 
 Actualmente, el proyecto ha completado su primera fase: el Analizador Léxico (Scanner), implementado haciendo uso del motor de expresiones regulares y autómatas de la biblioteca DeSiGNAR.
 
-- Estado Actual: Analizador Léxico
+# Estado Actual: Analizador Léxico
 
 El lexer actual (PyStrictLexer) es capaz de:
 
@@ -19,7 +19,7 @@ Ignorar de forma inteligente los comentarios de una sola línea (#) y los espaci
 Enriquecer los tokens devolviendo una estructura EnrichedToken con el lexema original, la categoría, y su ubicación exacta en el código fuente.
 
 
-- Estructura del Proyecto
+# Estructura del Proyecto
 
 pystrict-transpiler/
 ├── Docs/                  # Documentación del proyecto (Especificaciones en PDF)
@@ -32,7 +32,7 @@ pystrict-transpiler/
 └── Makefile               # Reglas de compilación automatizadas
 
 
-🛠️ Requisitos Previos
+# Requisitos Previos
 
 Para compilar y ejecutar este proyecto, tu entorno (Linux o WSL) debe contar con:
 
@@ -42,7 +42,7 @@ GNU Make: Para la orquestación de la compilación.
 
 Biblioteca DeSiGNAR (v4.0.0): Requerida para el motor de tokens (lexer.hpp).
 
-⚙️ Compilación y Ejecución
+# Compilación y Ejecución
 
 Configurar la ruta de DeSiGNAR:
 Antes de compilar, abre el archivo Makefile y asegúrate de que la variable DSG apunte al directorio correcto donde tienes instalada la biblioteca en tu sistema.
@@ -77,7 +77,7 @@ Al ejecutar el programa de prueba, verás el flujo de tokens reconocidos con su 
 ...
 
 
-- Roadmap (Próximos Pasos)
+# Roadmap (Próximos Pasos)
 
 Dado que la meta es un transpilador completo, el proyecto evolucionará para incluir:
 
@@ -89,7 +89,7 @@ Dado que la meta es un transpilador completo, el proyecto evolucionará para inc
 
 [ ] Generación de Código: Traducción del AST validado a C++ o lenguaje destino.
 
-- Autores
+# Autores
 
 Desarrollado como proyecto para la asignatura de Compiladores en la facultad de ingenieria de la Universidad de Los Andes
 
