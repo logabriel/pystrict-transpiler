@@ -9,8 +9,8 @@ CXX         = g++ -std=c++17
 WARN        = -Wall -Wextra -Wcast-align -Wno-sign-compare -Wno-write-strings -Wno-parentheses -Wfloat-equal -pedantic
 FLAGS       = -DDEBUG -g -O0
 
-# Ruta a DeSiGNAR 
-DSG         = DeSiGNAR-main
+# Ruta a DeSiGNAR  (Coloque la ruta que tenga instalada DeSiGNAR en su sistema)
+DSG         = home/luis_wsl/AYDA/Compiladores/DeSiGNAR-4.0.0
 
 # Directorios del proyecto
 SRC_DIR     = src
@@ -22,7 +22,7 @@ LEXER_SRC   = $(SRC_DIR)/pystrict_lexer.cpp
 
 # Ejecutable (src/ejemplo_lexer.cpp)
 TARGET      = pystrict
-MAIN_SRCS   = $(SRC_DIR)/ejemplo_lexer.cpp $(LEXER_SRC)
+MAIN_SRCS   = $(EX_DIR)/ejemplo_lexer.cpp $(LEXER_SRC)
 
 # Ejecutable de ejemplo (examples/main.cpp)
 EX_TARGET   = pystrict_example
